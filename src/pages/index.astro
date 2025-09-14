@@ -1,49 +1,348 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import Layout from '../layouts/Layout.astro';
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
-</html>
+<Layout title="Marcas Ganaderas El88 - Villa Amelia, Santa Fe">
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-amber-900 via-amber-800 to-yellow-900 text-white py-20 overflow-hidden">
+      <div class="absolute inset-0">
+        <img 
+          src={`${import.meta.env.BASE_URL}hero-marca.jpg`}
+          alt="Marcas Ganaderas El88 - Fabricación artesanal"
+          class="w-full h-full object-cover opacity-30"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40"></div>
+      </div>
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-4xl mx-auto text-center fade-in-up">
+          <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight drop-shadow-lg">
+            Marcas Ganaderas
+            <span class="text-yellow-400">El88</span>
+          </h1>
+          <p class="text-xl md:text-2xl mb-8 text-amber-100 leading-relaxed drop-shadow-md">
+            Fabricación artesanal de marcas para ganadería en <strong>hierro</strong>, <strong>acero inoxidable</strong> y <strong>bronce</strong>
+          </p>
+          <p class="text-lg md:text-xl mb-10 text-amber-200">
+            Para uso con nitrógeno líquido y fuego • Villa Amelia, Santa Fe
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://wa.me/5493412004038?text=Hola,%20me%20interesa%20información%20sobre%20marcas%20ganaderas"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
+            >
+              📱 WhatsApp: 341 2004038
+            </a>
+            <a
+              href="#servicios"
+              class="border-2 border-amber-200 text-amber-200 hover:bg-amber-200 hover:text-amber-900 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300"
+            >
+              Ver Servicios
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="py-16 bg-stone-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl font-bold text-center mb-12 text-stone-800">
+            Nuestros Servicios
+          </h2>
+          
+          <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <!-- Materiales -->
+            <div class="bg-gradient-to-br from-stone-800 to-stone-900 text-white p-8 rounded-xl shadow-xl">
+              <div class="text-4xl mb-4">🔥</div>
+              <h3 class="text-2xl font-bold mb-4">Materiales Premium</h3>
+              <ul class="space-y-2 text-stone-300">
+                <li>• Hierro forjado tradicional</li>
+                <li>• Acero inoxidable resistente</li>
+                <li>• Bronce para marcado especializado</li>
+              </ul>
+            </div>
+
+            <!-- Métodos -->
+            <div class="bg-gradient-to-br from-amber-700 to-amber-800 text-white p-8 rounded-xl shadow-xl">
+              <div class="text-4xl mb-4">❄️</div>
+              <h3 class="text-2xl font-bold mb-4">Métodos de Aplicación</h3>
+              <ul class="space-y-2 text-amber-100">
+                <li>• Marcado con nitrógeno líquido</li>
+                <li>• Marcado tradicional a fuego</li>
+                <li>• Diseños personalizados</li>
+              </ul>
+            </div>
+
+            <!-- Servicios -->
+            <div class="bg-gradient-to-br from-yellow-700 to-yellow-800 text-white p-8 rounded-xl shadow-xl">
+              <div class="text-4xl mb-4">🎯</div>
+              <h3 class="text-2xl font-bold mb-4">Servicios Incluidos</h3>
+              <ul class="space-y-2 text-yellow-100">
+                <li>• Diseño según boleto de marcas</li>
+                <li>• Diseños personalizados</li>
+                <li>• Asesoramiento técnico</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Proceso -->
+          <div class="bg-amber-50 p-8 rounded-xl border-2 border-amber-200">
+            <h3 class="text-2xl font-bold text-center mb-8 text-amber-800">
+              Nuestro Proceso de Trabajo
+            </h3>
+            <div class="grid md:grid-cols-4 gap-6">
+              <div class="text-center">
+                <div class="bg-amber-700 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
+                <h4 class="font-semibold mb-2">Consulta</h4>
+                <p class="text-sm text-stone-600">Analizamos tu boleto de marcas o diseñamos uno nuevo</p>
+              </div>
+              <div class="text-center">
+                <div class="bg-amber-700 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
+                <h4 class="font-semibold mb-2">Diseño</h4>
+                <p class="text-sm text-stone-600">Creamos el diseño técnico y seleccionamos materiales</p>
+              </div>
+              <div class="text-center">
+                <div class="bg-amber-700 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
+                <h4 class="font-semibold mb-2">Fabricación</h4>
+                <p class="text-sm text-stone-600">Forjado artesanal con técnicas tradicionales</p>
+              </div>
+              <div class="text-center">
+                <div class="bg-amber-700 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">4</div>
+                <h4 class="font-semibold mb-2">Entrega</h4>
+                <p class="text-sm text-stone-600">Tu marca lista para usar con instrucciones</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería Section -->
+    <section class="py-16 bg-stone-100">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl font-bold text-center mb-12 text-stone-800">
+            Nuestros Trabajos
+          </h2>
+          <p class="text-center text-stone-600 mb-12 text-lg">
+            Cada marca es única, fabricada con la precisión y calidad que tu ganado merece
+          </p>
+          
+          <!-- Galería con imágenes reales -->
+          <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item">
+              <img 
+                src={`${import.meta.env.BASE_URL}galeria/493505349_9868011039917646_8512150019322915050_n.jpg`}
+                alt="Marca ganadera El88 - Trabajo artesanal"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold text-stone-800">Trabajo Artesanal</h3>
+                <p class="text-stone-600 text-sm">Calidad garantizada</p>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item">
+              <img 
+                src={`${import.meta.env.BASE_URL}galeria/494193680_9898822126836537_1319876925539391496_n.jpg`}
+                alt="Marca ganadera El88 - Hierro forjado"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold text-stone-800">Hierro Forjado</h3>
+                <p class="text-stone-600 text-sm">Resistencia máxima</p>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item">
+              <img 
+                src={`${import.meta.env.BASE_URL}galeria/494422220_9898822633503153_8840216345205704390_n.jpg`}
+                alt="Marca ganadera El88 - Diseño personalizado"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold text-stone-800">Diseño Personalizado</h3>
+                <p class="text-stone-600 text-sm">Según tu necesidad</p>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item">
+              <img 
+                src={`${import.meta.env.BASE_URL}galeria/494467069_9898821863503230_2629868902132447601_n.jpg`}
+                alt="Marca ganadera El88 - Acero inoxidable"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold text-stone-800">Acero Inoxidable</h3>
+                <p class="text-stone-600 text-sm">Para criogenia</p>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item">
+              <img 
+                src={`${import.meta.env.BASE_URL}galeria/494637764_9898822406836509_109729027517888122_n.jpg`}
+                alt="Marca ganadera El88 - Proceso artesanal"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold text-stone-800">Proceso Artesanal</h3>
+                <p class="text-stone-600 text-sm">Técnica tradicional</p>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item">
+              <img 
+                src={`${import.meta.env.BASE_URL}galeria/496122526_9992790820773000_7505387172903842327_n.jpg`}
+                alt="Marca ganadera El88 - Terminación premium"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold text-stone-800">Terminación Premium</h3>
+                <p class="text-stone-600 text-sm">Acabado perfecto</p>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item md:col-span-2">
+              <img 
+                src={`${import.meta.env.BASE_URL}galeria/498946098_10087390811313000_3604780370004615344_n.jpg`}
+                alt="Marca ganadera El88 - Resultado final"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold text-stone-800">Resultado Final</h3>
+                <p class="text-stone-600 text-sm">Marca aplicada y funcionando</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section class="py-16 bg-amber-900 text-white">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl font-bold text-center mb-12">
+            Contacto y Ubicación
+          </h2>
+          
+          <div class="grid md:grid-cols-2 gap-12">
+            <!-- Información de contacto -->
+            <div class="space-y-6">
+              <div>
+                <h3 class="text-2xl font-bold mb-4 text-amber-300">Información de Contacto</h3>
+                <div class="space-y-4">
+                  <div class="flex items-center space-x-3">
+                    <span class="text-2xl">📱</span>
+                    <div>
+                      <p class="font-semibold">WhatsApp</p>
+                      <a href="https://wa.me/5493412004038" class="text-amber-300 hover:text-white transition-colors">
+                        +54 9 3412 00-4038
+                      </a>
+                    </div>
+                  </div>
+                  <div class="flex items-center space-x-3">
+                    <span class="text-2xl">✉️</span>
+                    <div>
+                      <p class="font-semibold">Email</p>
+                      <a href="mailto:cristiansilviovega@gmail.com" class="text-amber-300 hover:text-white transition-colors">
+                        cristiansilviovega@gmail.com
+                      </a>
+                    </div>
+                  </div>
+                  <div class="flex items-center space-x-3">
+                    <span class="text-2xl">📍</span>
+                    <div>
+                      <p class="font-semibold">Ubicación</p>
+                      <p class="text-amber-200">
+                        Río Juramento s/número<br>
+                        Ruta 18 km11, Villa Amelia<br>
+                        Santa Fe, Argentina
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Redes sociales -->
+              <div>
+                <h3 class="text-xl font-bold mb-4 text-amber-300">Síguenos en Redes</h3>
+                <div class="flex space-x-4">
+                  <a
+                    href="https://www.instagram.com/marcasganaderasel88/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="bg-pink-600 hover:bg-pink-700 p-3 rounded-lg transition-colors"
+                    aria-label="Instagram"
+                  >
+                    <span class="text-xl">📷</span>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/cristiansilvio.vega"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="bg-blue-600 hover:bg-blue-700 p-3 rounded-lg transition-colors"
+                    aria-label="Facebook"
+                  >
+                    <span class="text-xl">📘</span>
+                  </a>
+                  <a
+                    href="https://www.tiktok.com/@marcasganaderasel88"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="bg-black hover:bg-gray-800 p-3 rounded-lg transition-colors"
+                    aria-label="TikTok"
+                  >
+                    <span class="text-xl">🎵</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA final -->
+            <div class="bg-amber-800 p-8 rounded-xl border border-amber-700">
+              <h3 class="text-2xl font-bold mb-4">¿Necesitas una marca personalizada?</h3>
+              <p class="mb-6 text-amber-100">
+                Trabajamos con diseños según tu boleto de marcas oficial o creamos diseños únicos 
+                para tu establecimiento ganadero.
+              </p>
+              <div class="space-y-4">
+                <a
+                  href="https://wa.me/5493412004038?text=Hola,%20necesito%20información%20sobre%20marcas%20ganaderas%20personalizadas"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="block bg-amber-600 hover:bg-amber-700 text-center py-4 px-6 rounded-lg font-semibold transition-colors"
+                >
+                  💬 Solicitar Cotización
+                </a>
+                <p class="text-sm text-amber-200 text-center">
+                  Respuesta inmediata por WhatsApp
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-white py-8">
+      <div class="container mx-auto px-6">
+        <div class="text-center">
+          <h3 class="text-xl font-bold mb-2">Marcas Ganaderas El88</h3>
+          <p class="text-stone-400 mb-4">Calidad artesanal para tu ganado</p>
+          <p class="text-sm text-stone-500">
+            Villa Amelia, Santa Fe • WhatsApp: 341 2004038
+          </p>
+          <p class="text-xs text-stone-600 mt-4">
+            © 2025 Marcas Ganaderas El88. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </main>
+</Layout>
