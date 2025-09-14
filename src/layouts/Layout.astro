@@ -7,6 +7,9 @@ export interface Props {
 const { title, description = "Marcas Ganaderas El88 - Fabricación artesanal de marcas para ganadería en hierro, acero inoxidable y bronce. Villa Amelia, Santa Fe." } = Astro.props;
 
 import '../styles/global.css';
+
+// Base URL for GitHub Pages
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <!DOCTYPE html>
@@ -15,7 +18,7 @@ import '../styles/global.css';
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+    <link rel="icon" type="image/svg+xml" href={`${baseUrl}favicon.svg`} />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     
@@ -24,13 +27,13 @@ import '../styles/global.css';
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content="https://pablOOO5.github.io/marcas-ganaderas-el88/" />
-    <meta property="og:image" content={`${import.meta.env.BASE_URL}galeria/social.jpg`} />
+    <meta property="og:image" content={`${baseUrl}galeria/social.jpg`} />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={`${import.meta.env.BASE_URL}galeria/social.jpg`} />
+    <meta property="twitter:image" content={`${baseUrl}galeria/social.jpg`} />
     
     <!-- Local Business Schema -->
     <script type="application/ld+json">
