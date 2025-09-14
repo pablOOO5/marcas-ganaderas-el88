@@ -8,7 +8,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://USUARIO.github.io',
+  site: 'https://pablOOO5.github.io',
   base: '/marcas-ganaderas-el88',
   integrations: [mdx(), sitemap()],
 
