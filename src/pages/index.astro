@@ -462,7 +462,7 @@ const baseUrl = '/marcas-ganaderas-el88/';
   <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden items-center justify-center p-4">
     <div class="relative max-w-4xl max-h-full">
       <button 
-        onclick="closeModal()" 
+        id="closeModalBtn"
         class="absolute top-4 right-4 text-white text-3xl font-bold hover:text-amber-400 transition-colors z-10 bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center"
       >
         ×
@@ -517,6 +517,12 @@ const baseUrl = '/marcas-ganaderas-el88/';
         });
       });
 
+      // Agregar event listener al botón de cerrar
+      const closeBtn = document.getElementById('closeModalBtn');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', closeModal);
+      }
+
       // Cerrar modal al presionar Escape
       document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') {
@@ -526,11 +532,13 @@ const baseUrl = '/marcas-ganaderas-el88/';
 
       // Cerrar modal al hacer clic fuera de la imagen
       const modal = document.getElementById('imageModal');
-      modal.addEventListener('click', function(e) {
-        if (e.target === this) {
-          closeModal();
-        }
-      });
+      if (modal) {
+        modal.addEventListener('click', function(e) {
+          if (e.target === this) {
+            closeModal();
+          }
+        });
+      }
     });
   </script>
 </Layout>
