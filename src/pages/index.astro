@@ -124,6 +124,90 @@ const baseUrl = '/marcas-ganaderas-el88/';
       </div>
     </section>
 
+    <!-- Productos Específicos Section -->
+    <section id="productos" class="py-16 bg-gradient-to-br from-amber-50 to-stone-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl font-bold text-center mb-12 text-stone-800">
+            Productos Especializados
+          </h2>
+          
+          <div class="grid md:grid-cols-4 gap-6 mb-8">
+            <!-- Marcas de Hierro -->
+            <div class="bg-white p-6 rounded-xl shadow-lg border-2 border-amber-200 hover:shadow-xl transition-shadow">
+              <div class="text-center">
+                <div class="text-3xl mb-3">🔥</div>
+                <h3 class="text-lg font-bold mb-2 text-stone-800">Marcas de Hierro</h3>
+                <p class="text-sm text-stone-600">Tradicionales y duraderas</p>
+              </div>
+            </div>
+
+            <!-- Marcas de Acero Inoxidable -->
+            <div class="bg-white p-6 rounded-xl shadow-lg border-2 border-amber-200 hover:shadow-xl transition-shadow">
+              <div class="text-center">
+                <div class="text-3xl mb-3">⚡</div>
+                <h3 class="text-lg font-bold mb-2 text-stone-800">Marcas de Acero Inoxidable</h3>
+                <p class="text-sm text-stone-600">Resistentes a la corrosión</p>
+              </div>
+            </div>
+
+            <!-- Señaladoras de Orejas -->
+            <div class="bg-white p-6 rounded-xl shadow-lg border-2 border-amber-200 hover:shadow-xl transition-shadow">
+              <div class="text-center">
+                <div class="text-3xl mb-3">✂️</div>
+                <h3 class="text-lg font-bold mb-2 text-stone-800">Señaladoras de Orejas</h3>
+                <p class="text-sm text-stone-600">Para identificación precisa</p>
+              </div>
+            </div>
+
+            <!-- Calentador de Marcas -->
+            <div class="bg-white p-6 rounded-xl shadow-lg border-2 border-amber-200 hover:shadow-xl transition-shadow">
+              <div class="text-center">
+                <div class="text-3xl mb-3">🔥</div>
+                <h3 class="text-lg font-bold mb-2 text-stone-800">Calentador de Marcas</h3>
+                <p class="text-sm text-stone-600">Para 2 y 4 marcas a la vez</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Descripción detallada -->
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+              <h3 class="text-xl font-bold mb-4 text-amber-800 flex items-center">
+                <span class="text-2xl mr-3">✂️</span>
+                Señaladoras de Orejas
+              </h3>
+              <p class="text-stone-600 mb-4">
+                Herramientas especializadas para el señalado de orejas del ganado, diseñadas para crear marcas de identificación precisas y duraderas.
+              </p>
+              <ul class="space-y-2 text-stone-600">
+                <li>• Cortes precisos y limpios</li>
+                <li>• Diseños personalizados según requerimientos</li>
+                <li>• Acero de alta calidad</li>
+                <li>• Fácil manejo y mantenimiento</li>
+              </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+              <h3 class="text-xl font-bold mb-4 text-amber-800 flex items-center">
+                <span class="text-2xl mr-3">🔥</span>
+                Calentador de Marcas
+              </h3>
+              <p class="text-stone-600 mb-4">
+                Sistema de calentado eficiente que permite trabajar con 2 o 4 marcas simultáneamente, optimizando el tiempo de trabajo en el campo.
+              </p>
+              <ul class="space-y-2 text-stone-600">
+                <li>• Capacidad para 2 y 4 marcas</li>
+                <li>• Calentado uniforme y controlado</li>
+                <li>• Construcción robusta</li>
+                <li>• Ideal para trabajos extensivos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Galería Section -->
     <section id="galeria" class="py-16 bg-stone-100">
       <div class="container mx-auto px-6">
@@ -218,6 +302,30 @@ const baseUrl = '/marcas-ganaderas-el88/';
               <div class="p-4">
                 <h3 class="font-semibold text-stone-800">Resultado Final</h3>
                 <p class="text-stone-600 text-sm">Marca aplicada y funcionando</p>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item">
+              <img 
+                src={`${baseUrl}galeria/señaladoras de orejas para ganadería.jpg`}
+                alt="Señaladoras de orejas para ganadería"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold text-stone-800">Señaladoras de Orejas</h3>
+                <p class="text-stone-600 text-sm">Identificación precisa</p>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item">
+              <img 
+                src={`${baseUrl}galeria/calentador de marcas de 2 y 4 marcas a la vez.jpg`}
+                alt="Calentador de marcas de 2 y 4 marcas a la vez"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold text-stone-800">Calentador de Marcas</h3>
+                <p class="text-stone-600 text-sm">2 y 4 marcas simultáneas</p>
               </div>
             </div>
           </div>
