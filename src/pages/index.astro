@@ -66,6 +66,7 @@ const baseUrl = '/marcas-ganaderas-el88/';
                 <li>• Hierro forjado tradicional</li>
                 <li>• Acero inoxidable resistente</li>
                 <li>• Bronce para marcado especializado</li>
+                <li>• Corte láser de precisión</li>
               </ul>
             </div>
 
@@ -221,7 +222,7 @@ const baseUrl = '/marcas-ganaderas-el88/';
           
           <!-- Galería con imágenes reales -->
           <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item cursor-pointer" onclick="openModal('{baseUrl}galeria/493505349_9868011039917646_8512150019322915050_n.jpg', 'Marca ganadera El88 - Trabajo artesanal')">
               <img 
                 src={`${baseUrl}galeria/493505349_9868011039917646_8512150019322915050_n.jpg`}
                 alt="Marca ganadera El88 - Trabajo artesanal"
@@ -233,7 +234,7 @@ const baseUrl = '/marcas-ganaderas-el88/';
               </div>
             </div>
             
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item cursor-pointer" onclick="openModal('{baseUrl}galeria/494193680_9898822126836537_1319876925539391496_n.jpg', 'Marca ganadera El88 - Hierro forjado')">
               <img 
                 src={`${baseUrl}galeria/494193680_9898822126836537_1319876925539391496_n.jpg`}
                 alt="Marca ganadera El88 - Hierro forjado"
@@ -245,7 +246,7 @@ const baseUrl = '/marcas-ganaderas-el88/';
               </div>
             </div>
             
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item cursor-pointer" onclick="openModal('{baseUrl}galeria/494422220_9898822633503153_8840216345205704390_n.jpg', 'Marca ganadera El88 - Diseño personalizado')">
               <img 
                 src={`${baseUrl}galeria/494422220_9898822633503153_8840216345205704390_n.jpg`}
                 alt="Marca ganadera El88 - Diseño personalizado"
@@ -257,7 +258,7 @@ const baseUrl = '/marcas-ganaderas-el88/';
               </div>
             </div>
             
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item cursor-pointer" onclick="openModal('{baseUrl}galeria/494467069_9898821863503230_2629868902132447601_n.jpg', 'Marca ganadera El88 - Acero inoxidable')">
               <img 
                 src={`${baseUrl}galeria/494467069_9898821863503230_2629868902132447601_n.jpg`}
                 alt="Marca ganadera El88 - Acero inoxidable"
@@ -269,7 +270,7 @@ const baseUrl = '/marcas-ganaderas-el88/';
               </div>
             </div>
             
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item cursor-pointer" onclick="openModal('{baseUrl}galeria/494637764_9898822406836509_109729027517888122_n.jpg', 'Marca ganadera El88 - Proceso artesanal')">
               <img 
                 src={`${baseUrl}galeria/494637764_9898822406836509_109729027517888122_n.jpg`}
                 alt="Marca ganadera El88 - Proceso artesanal"
@@ -281,7 +282,7 @@ const baseUrl = '/marcas-ganaderas-el88/';
               </div>
             </div>
             
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item cursor-pointer" onclick="openModal('{baseUrl}galeria/496122526_9992790820773000_7505387172903842327_n.jpg', 'Marca ganadera El88 - Terminación premium')">
               <img 
                 src={`${baseUrl}galeria/496122526_9992790820773000_7505387172903842327_n.jpg`}
                 alt="Marca ganadera El88 - Terminación premium"
@@ -293,7 +294,7 @@ const baseUrl = '/marcas-ganaderas-el88/';
               </div>
             </div>
             
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item md:col-span-2">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item md:col-span-2 cursor-pointer" onclick="openModal('{baseUrl}galeria/498946098_10087390811313000_3604780370004615344_n.jpg', 'Marca ganadera El88 - Resultado final')">
               <img 
                 src={`${baseUrl}galeria/498946098_10087390811313000_3604780370004615344_n.jpg`}
                 alt="Marca ganadera El88 - Resultado final"
@@ -305,7 +306,7 @@ const baseUrl = '/marcas-ganaderas-el88/';
               </div>
             </div>
 
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item cursor-pointer" onclick="openModal('{baseUrl}galeria/señaladoras de orejas para ganadería.jpg', 'Señaladoras de orejas para ganadería')">
               <img 
                 src={`${baseUrl}galeria/señaladoras de orejas para ganadería.jpg`}
                 alt="Señaladoras de orejas para ganadería"
@@ -317,7 +318,7 @@ const baseUrl = '/marcas-ganaderas-el88/';
               </div>
             </div>
 
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-item cursor-pointer" onclick="openModal('{baseUrl}galeria/calentador de marcas de 2 y 4 marcas a la vez.jpg', 'Calentador de marcas de 2 y 4 marcas a la vez')">
               <img 
                 src={`${baseUrl}galeria/calentador de marcas de 2 y 4 marcas a la vez.jpg`}
                 alt="Calentador de marcas de 2 y 4 marcas a la vez"
@@ -456,4 +457,65 @@ const baseUrl = '/marcas-ganaderas-el88/';
       </div>
     </footer>
   </main>
+
+  <!-- Modal para imágenes grandes -->
+  <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden items-center justify-center p-4">
+    <div class="relative max-w-4xl max-h-full">
+      <button 
+        onclick="closeModal()" 
+        class="absolute top-4 right-4 text-white text-3xl font-bold hover:text-amber-400 transition-colors z-10 bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center"
+      >
+        ×
+      </button>
+      <img 
+        id="modalImage" 
+        src="" 
+        alt="" 
+        class="max-w-full max-h-[90vh] object-contain rounded-lg"
+      />
+      <p id="modalCaption" class="text-white text-center mt-4 text-lg"></p>
+    </div>
+  </div>
+
+  <script>
+    // Función para abrir el modal con la imagen
+    function openModal(imageSrc, caption) {
+      const modal = document.getElementById('imageModal');
+      const modalImage = document.getElementById('modalImage');
+      const modalCaption = document.getElementById('modalCaption');
+      
+      // Reemplazar el placeholder en la URL
+      const fullImageSrc = imageSrc.replace('{baseUrl}', '/marcas-ganaderas-el88/');
+      
+      modalImage.src = fullImageSrc;
+      modalImage.alt = caption;
+      modalCaption.textContent = caption;
+      
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    // Función para cerrar el modal
+    function closeModal() {
+      const modal = document.getElementById('imageModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Cerrar modal al presionar Escape
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+
+    // Cerrar modal al hacer clic fuera de la imagen
+    document.getElementById('imageModal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeModal();
+      }
+    });
+  </script>
 </Layout>

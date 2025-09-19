@@ -49,6 +49,25 @@ section[id] {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
+.gallery-item.cursor-pointer:hover {
+  transform: scale(1.02);
+}
+
+/* Modal transitions */
+#imageModal {
+  transition: opacity 0.3s ease;
+}
+
+#imageModal.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#imageModal.flex {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* WhatsApp button pulse */
 @keyframes pulse {
   0%, 100% {
