@@ -7,7 +7,7 @@ html {
 
 /* Scroll offset for fixed header */
 section[id] {
-  scroll-margin-top: 70px;
+  scroll-margin-top: 75px;
 }
 
 .hero-pattern {
